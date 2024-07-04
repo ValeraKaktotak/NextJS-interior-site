@@ -1,6 +1,8 @@
-Framework & Library
+## Framework & Library
+
 ↪ React JS 18+
 ↪ Next JS 14+
+↪ Shadcn UI
 ↪ Headless UI
 ↪ Tailwind CSS
 ↪ Framer Motion
