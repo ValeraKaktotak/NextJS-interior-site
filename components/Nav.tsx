@@ -38,7 +38,6 @@ const Nav: FC<INav> = ({ containerStyles, linkStyles, underlineStyles }) => {
               layoutId='underline'
               className={`${underlineStyles}`}
             />
-            //<span className={`${underlineStyles}`} />
           )}
           {link.name}
         </Link>
