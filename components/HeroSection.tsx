@@ -55,15 +55,20 @@ const HeroSection: FC<IHeroSection> = ({}) => {
       </div>
 
       {/*Right image section */}
-      <div className='lg:w-1/2'>
+      <motion.div
+        initial='offscreen'
+        animate='onscreen'
+        variants={tagVariants}
+        className='relative lg:w-1/2'
+      >
         <Image
           src='/image/hall.png'
           alt='hall'
           width={800}
           height={500}
-          className='absolute right-20 hidden lg:block lg:h-[344px] lg:w-[500px] xl:h-[448px] xl:w-[700px]'
+          className='absolute left-0 hidden lg:block lg:h-[344px] lg:w-[500px] xl:h-[448px] xl:w-[700px]'
         />
-      </div>
+      </motion.div>
     </div>
   )
 }
