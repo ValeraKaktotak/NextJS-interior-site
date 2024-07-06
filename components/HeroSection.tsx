@@ -1,9 +1,12 @@
+'use client'
+import { motion } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import type { FC } from 'react'
 
 //Components
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
+import { desVariants, tagVariants, titleVariants } from '@/utils/animation'
 
 interface IHeroSection {}
 
@@ -12,20 +15,43 @@ const HeroSection: FC<IHeroSection> = ({}) => {
     <div className='container h-[auto] py-12 text-center lg:flex lg:justify-between lg:py-20 lg:text-left xl:py-24'>
       {/*Left section */}
       <div className='lg:w-1/2 lg:py-8 xl:py-14'>
-        <p className='uppercase tracking-widest'>Offer for the best Interior</p>
-        <h1 className='h1'>
+        <motion.p
+          initial='offscreen'
+          animate='onscreen'
+          variants={titleVariants}
+          className='uppercase tracking-widest'
+        >
+          Offer for the best Interior
+        </motion.p>
+        <motion.h1
+          initial='offscreen'
+          animate='onscreen'
+          variants={desVariants}
+          className='h1'
+        >
           Make your home a <br />
           piece of art
-        </h1>
-        <p className='pb-6 text-muted-foreground xl:pb-10'>
+        </motion.h1>
+        <motion.p
+          initial='offscreen'
+          animate='onscreen'
+          variants={tagVariants}
+          className='pb-6 text-muted-foreground xl:pb-10'
+        >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
           molestias animi omnis ullam pariatur aperiam doloremque! Praesentium
           assumenda fuga aliquid reiciendis nisi corporis numquam neque quaerat!
           Odit expedita fuga velit.
-        </p>
-        <Button className='inline-flex items-center rounded-full px-8 py-3 text-white shadow-lg'>
-          Book now <ArrowUpRight className='ml-2 h-5 w-5' />
-        </Button>
+        </motion.p>
+        <motion.div
+          initial='offscreen'
+          animate='onscreen'
+          variants={tagVariants}
+        >
+          <Button className='inline-flex items-center rounded-full px-8 py-3 text-white shadow-lg'>
+            Book now <ArrowUpRight className='ml-2 h-5 w-5' />
+          </Button>
+        </motion.div>
       </div>
 
       {/*Right image section */}
