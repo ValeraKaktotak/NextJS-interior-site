@@ -58,7 +58,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
       <motion.div
         initial='offscreen'
         animate='onscreen'
-        variants={tagVariants}
+        variants={titleVariants}
         className='relative lg:w-1/2'
       >
         <Image
