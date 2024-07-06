@@ -14,7 +14,7 @@ const Header: FC<IHeader> = ({}) => {
 
   useEffect(() => {
     const scrollYPos = () => {
-      window.scrollY > 50 ? setHeader(true) : setHeader(false)
+      window.scrollY > 30 ? setHeader(true) : setHeader(false)
     }
     window.addEventListener('scroll', scrollYPos)
 
@@ -26,8 +26,8 @@ const Header: FC<IHeader> = ({}) => {
       className={`${
         header
           ? 'bg-tertiary py-4 shadow-lg dark:bg-accent'
-          : 'py-6 dark:bg-transparent'
-      } sticky top-0 transition-all`}
+          : 'py-6 dark:bg-background'
+      } sticky top-0 z-30 bg-background transition-all`}
     >
       <div className='container'>
         <div className='flex items-center justify-between'>
