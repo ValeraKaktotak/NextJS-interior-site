@@ -59,3 +59,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.h1 {
+  @apply mb-5 mt-4 text-6xl font-bold tracking-[-2px] xl:text-[72px] xl:leading-[80px];
+}
