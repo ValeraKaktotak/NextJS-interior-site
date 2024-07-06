@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 
 interface INav {
-  containerStyles: string
-  linkStyles: string
-  underlineStyles: string
+  containerStyles?: string
+  linkStyles?: string
+  underlineStyles?: string
 }
 
 const links = [
@@ -19,7 +19,12 @@ const links = [
   { path: '/contact', name: 'contact' }
 ]
 
-const Nav: FC<INav> = ({ containerStyles, linkStyles, underlineStyles }) => {
+const Nav: FC<INav> = ({
+  containerStyles,
+  linkStyles,
+  underlineStyles,
+  ...props
+}) => {
   const path = usePathname()
 
   return (
@@ -29,6 +34,7 @@ const Nav: FC<INav> = ({ containerStyles, linkStyles, underlineStyles }) => {
           key={index}
           href={link.path}
           className={`uppercase ${linkStyles}`}
+          {...props}
         >
           {link.path === path && (
             <motion.span

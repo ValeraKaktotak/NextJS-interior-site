@@ -38,7 +38,7 @@ const Header: FC<IHeader> = ({}) => {
           <div className='flex items-center gap-x-6'>
             {/*Nav Section */}
             <Nav
-              containerStyles='hidden sm:flex gap-x-8 items-center'
+              containerStyles='hidden md:flex gap-x-8 items-center'
               linkStyles='relative hover:text-primary transition-all'
               underlineStyles='absolute left-0 top-full h-[2px] w-full bg-primary'
             />
@@ -47,7 +47,7 @@ const Header: FC<IHeader> = ({}) => {
             <ThemeToggler />
 
             {/*Mobile Navigation */}
-            <div className='sm:hidden'>
+            <div className='md:hidden'>
               <MobileNavigation />
             </div>
           </div>
