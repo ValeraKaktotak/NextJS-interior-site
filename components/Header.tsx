@@ -1,5 +1,4 @@
 'use client'
-import { usePathname } from 'next/navigation'
 import { useEffect, useState, type FC } from 'react'
 
 //Components
@@ -12,7 +11,6 @@ interface IHeader {}
 
 const Header: FC<IHeader> = ({}) => {
   const [header, setHeader] = useState(false)
-  const path = usePathname()
 
   useEffect(() => {
     const scrollYPos = () => {
@@ -29,7 +27,7 @@ const Header: FC<IHeader> = ({}) => {
         header
           ? 'bg-tertiary py-4 shadow-lg dark:bg-accent'
           : 'py-6 dark:bg-transparent'
-      } sticky top-0 transition-all ${path === '/' && 'bg-[#fff]'}`}
+      } sticky top-0 transition-all`}
     >
       <div className='container'>
         <div className='flex items-center justify-between'>
