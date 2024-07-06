@@ -1,8 +1,6 @@
-import { useEffect, useState, type FC } from 'react'
+import { useEffect, useState } from 'react'
 
-interface IUseScrollProgress {}
-
-const useScrollProgress: FC<IUseScrollProgress> = ({}) => {
+const useScrollProgress = () => {
   const [completion, setCompletion] = useState<number>(0)
 
   useEffect(() => {
