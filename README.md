@@ -1,16 +1,27 @@
 ## Framework & Library
 
 ↪ React JS 18+
+
 ↪ Next JS 14+
+
 ↪ Shadcn UI
+
 ↪ Headless UI
+
 ↪ Tailwind CSS
+
 ↪ Framer Motion
+
 ↪ React Count Up
+
 ↪ Radix UI
+
 ↪ Code Splitting
+
 ↪ Google Fonts
+
 ↪ Easy Folder Structure
+
 ↪ Organized Code Structure
 
 ## Getting Started

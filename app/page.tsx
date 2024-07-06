@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Main</div>
+  return <div style={{ height: '2500px' }}>Main</div>
 }
