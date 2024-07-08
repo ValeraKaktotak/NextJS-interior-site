@@ -17,7 +17,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
       <div className='lg:w-1/2 lg:py-8 xl:py-14'>
         <motion.p
           initial='offscreen'
-          animate='onscreen'
+          whileInView='onscreen'
           variants={titleVariants}
           className='uppercase tracking-widest'
         >
@@ -25,7 +25,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
         </motion.p>
         <motion.h1
           initial='offscreen'
-          animate='onscreen'
+          whileInView='onscreen'
           variants={desVariants}
           className='h1'
         >
@@ -34,7 +34,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
         </motion.h1>
         <motion.p
           initial='offscreen'
-          animate='onscreen'
+          whileInView='onscreen'
           variants={tagVariants}
           className='pb-6 text-muted-foreground xl:pb-10'
         >
@@ -45,7 +45,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
         </motion.p>
         <motion.div
           initial='offscreen'
-          animate='onscreen'
+          whileInView='onscreen'
           variants={tagVariants}
         >
           <Button className='inline-flex items-center rounded-full px-8 py-3 text-white shadow-lg'>
@@ -57,16 +57,16 @@ const HeroSection: FC<IHeroSection> = ({}) => {
       {/*Right image section */}
       <motion.div
         initial='offscreen'
-        animate='onscreen'
+        whileInView='onscreen'
         variants={titleVariants}
-        className='relative lg:w-1/2'
+        className='lg:w-1/2'
       >
         <Image
           src='/image/hall.png'
           alt='hall'
           width={800}
           height={500}
-          className='absolute left-0 hidden lg:block lg:h-[344px] lg:w-[500px] xl:h-[448px] xl:w-[700px]'
+          className='left-0 hidden lg:block'
         />
       </motion.div>
     </div>

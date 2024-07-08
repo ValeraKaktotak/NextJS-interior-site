@@ -16,7 +16,7 @@ const CompanySection: FC<ICompanySection> = ({}) => {
           {/* Badge 1 */}
           <motion.div
             initial='offscreen'
-            animate='onscreen'
+            whileInView='onscreen'
             variants={titleVariants}
             className='mx-auto flex max-w-xs flex-col gap-y-4'
           >
@@ -32,7 +32,7 @@ const CompanySection: FC<ICompanySection> = ({}) => {
           {/* Badge 2 */}
           <motion.div
             initial='offscreen'
-            animate='onscreen'
+            whileInView='onscreen'
             variants={titleVariants}
             className='mx-auto flex max-w-xs flex-col gap-y-4'
           >
@@ -48,7 +48,7 @@ const CompanySection: FC<ICompanySection> = ({}) => {
           {/* Badge 3 */}
           <motion.div
             initial='offscreen'
-            animate='onscreen'
+            whileInView='onscreen'
             variants={titleVariants}
             className='mx-auto flex max-w-xs flex-col gap-y-4'
           >
