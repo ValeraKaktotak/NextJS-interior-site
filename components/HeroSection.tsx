@@ -64,8 +64,8 @@ const HeroSection: FC<IHeroSection> = ({}) => {
         <Image
           src='/image/hall.png'
           alt='hall'
-          width={800}
-          height={500}
+          width={500}
+          height={800}
           className='left-0 hidden lg:block'
         />
       </motion.div>

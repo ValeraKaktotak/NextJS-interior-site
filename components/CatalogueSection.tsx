@@ -59,7 +59,7 @@ const CatalogueSection: FC<ICatalogueSection> = ({}) => {
             />
           </div>
 
-          <div className='absolute top-0 m-12 bg-white bg-opacity-60 p-8 text-black backdrop-blur'>
+          <div className='absolute top-0 m-12 bg-white bg-opacity-60 p-8 text-black backdrop-blur lg:m-4'>
             <div className='flex justify-between pb-4'>
               <p className='text-sm'>{item.category}</p>
               <span className='text-sm'>{item.id}</span>
@@ -73,7 +73,7 @@ const CatalogueSection: FC<ICatalogueSection> = ({}) => {
             </Link>
           </div>
 
-          <div className='inset-0 hidden flex-col items-center justify-end gap-32 border-b-2 bg-tertiary pb-16 text-2xl transition duration-300 ease-in-out group-hover:translate-y-full md:absolute md:flex md:border-b-0'>
+          <div className='inset-0 hidden flex-col items-center justify-end gap-32 border-b-2 bg-tertiary pb-16 text-2xl transition duration-300 ease-in-out group-hover:translate-y-[-100%] md:absolute md:flex md:border-b-0'>
             <p className='rotate-[270deg] tracking-wider'>{item.category}</p>
             <span>{item.id}</span>
           </div>
