@@ -66,6 +66,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
           alt='hall'
           width={500}
           height={800}
+          priority
           className='left-0 hidden lg:block'
         />
       </motion.div>
