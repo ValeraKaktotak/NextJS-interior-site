@@ -10,7 +10,7 @@ interface IAboutCompanySection {}
 
 const AboutCompanySection: FC<IAboutCompanySection> = ({}) => {
   return (
-    <div className='container h-[auto] py-12 xl:py-24'>
+    <section className='container h-[auto] py-12 xl:py-24'>
       <div className='grid place-items-center lg:grid-cols-2'>
         <motion.div
           initial='offscreen'
@@ -66,7 +66,7 @@ const AboutCompanySection: FC<IAboutCompanySection> = ({}) => {
           </motion.p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default AboutCompanySection

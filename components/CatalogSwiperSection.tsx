@@ -20,7 +20,7 @@ interface ICatalogSwiperSection {}
 
 const CatalogSwiperSection: FC<ICatalogSwiperSection> = ({}) => {
   return (
-    <div className='py-8 lg:py-28'>
+    <section className='py-8 lg:py-28'>
       <div className='container grid pb-8 lg:grid-cols-1'>
         <div className='text-left'>
           <motion.h1
@@ -131,7 +131,7 @@ const CatalogSwiperSection: FC<ICatalogSwiperSection> = ({}) => {
         </SwiperSlide>
         ...
       </Swiper>
-    </div>
+    </section>
   )
 }
 export default CatalogSwiperSection

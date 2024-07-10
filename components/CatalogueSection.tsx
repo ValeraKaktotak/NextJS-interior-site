@@ -45,7 +45,7 @@ const CatalogueSection: FC<ICatalogueSection> = ({}) => {
   ]
 
   return (
-    <div className='grid gap-8 divide-gray-300 md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x'>
+    <section className='grid gap-8 divide-gray-300 md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x'>
       {items.map((item) => (
         <div key={item.id} className='group relative overflow-hidden'>
           <div>
@@ -79,7 +79,7 @@ const CatalogueSection: FC<ICatalogueSection> = ({}) => {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   )
 }
 export default CatalogueSection
