@@ -12,7 +12,7 @@ interface IHeroSection {}
 
 const HeroSection: FC<IHeroSection> = ({}) => {
   return (
-    <div className='container h-[auto] py-12 text-center lg:flex lg:justify-between lg:py-20 lg:text-left xl:py-24'>
+    <section className='container h-[auto] py-12 text-center lg:flex lg:justify-between lg:py-20 lg:text-left xl:py-24'>
       {/*Left section */}
       <div className='lg:w-1/2 lg:py-8 xl:py-14'>
         <motion.p
@@ -69,7 +69,7 @@ const HeroSection: FC<IHeroSection> = ({}) => {
           className='left-0 hidden lg:block'
         />
       </motion.div>
-    </div>
+    </section>
   )
 }
 export default HeroSection
