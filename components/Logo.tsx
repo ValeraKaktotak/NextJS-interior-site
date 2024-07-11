@@ -7,7 +7,14 @@ interface ILogo {}
 const Logo: FC<ILogo> = ({}) => {
   return (
     <Link href='/'>
-      <Image src='/logo.png' width={160} height={55} alt='logo' />
+      <Image
+        src='/logo.png'
+        priority
+        width={160}
+        height={55}
+        alt='logo'
+        className='h-auto w-auto'
+      />
     </Link>
   )
 }

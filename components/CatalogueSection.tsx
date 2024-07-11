@@ -54,7 +54,6 @@ const CatalogueSection: FC<ICatalogueSection> = ({}) => {
               alt={item.title}
               width={380}
               height={100}
-              objectFit='cover'
               className='w-full'
             />
           </div>
